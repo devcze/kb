@@ -1,15 +1,16 @@
 # Dart basics
 
-#### MInimal example
+#### Minimal example
 ```dart
 void main() {
   for (int i = 0; i < 5; i++) {
-    print('hello ${i+1}');
+    print('hello ${i + 1}');
   }
 
   int add(int a, int b) {
     return a + b;
   }
+}
 ```
 
 #### Dynamic types
@@ -49,5 +50,17 @@ class SuperDog extends Dog {
 }
 
 Dog d = Dog(5);
+```
+
+### Named function parameters
+Optional function parameters 
+```dart
+void main() {
+  greet(greeting: "Hi");
+}
+
+void greeting({String greeting}) {
+  print(greeting);
+}
 ```
 
